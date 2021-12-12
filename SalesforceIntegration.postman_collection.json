@@ -1,0 +1,675 @@
+{
+	"info": {
+		"_postman_id": "9b9b9d89-6038-468a-aa48-ebe64bffb015",
+		"name": "SalesforceIntegration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9t0sl2P.pByr0XWCdLg8NF11Ts6iq4xnASLBv3YxyZV6UOMZiYOyCScWkI0s_3Rsm2TOTVO41QWVNLVRH&client_secret=82E4588D74A16D38B399EC5A5FC98699F328BD7E1F0479EC27EC268E9DC38832\n&username=solbritt@projet12.com&password=",
+							"protocol": "https",
+							"host": [
+								"login",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "password"
+								},
+								{
+									"key": "client_id",
+									"value": "3MVG9t0sl2P.pByr0XWCdLg8NF11Ts6iq4xnASLBv3YxyZV6UOMZiYOyCScWkI0s_3Rsm2TOTVO41QWVNLVRH"
+								},
+								{
+									"key": "client_secret",
+									"value": "82E4588D74A16D38B399EC5A5FC98699F328BD7E1F0479EC27EC268E9DC38832\n"
+								},
+								{
+									"key": "username",
+									"value": "solbritt@projet12.com"
+								},
+								{
+									"key": "password",
+									"value": 
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 13 Nov 2021 19:01:02 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+						},
+						{
+							"key": "X-ReadOnlyMode",
+							"value": "false"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"00D7Q0000016EcT!AQ8AQCLrYRsJqDq7LGmn.EwEeRlhDlDVqMpnhjJsRSTIGQJ5DB91Ru2TnwUWrrQn5lE47Udl.x3KE2VRHFtm19hlhC9X3LOl\",\n    \"instance_url\": \"https://projet12com-dev-ed.my.salesforce.com\",\n    \"id\": \"https://login.salesforce.com/id/00D7Q0000016EcTUAU/0057Q000000itF4QAI\",\n    \"token_type\": \"Bearer\",\n    \"issued_at\": \"1636830062904\",\n    \"signature\": \"reFmt4c7EAiAGvugEIw/gjYKxNh8UjDELK3KeTRj3G4=\"\n}"
+				}
+			]
+		},
+		{
+			"name": "projet12Integration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9t0sl2P.pByr0XWCdLg8NF11Ts6iq4xnASLBv3YxyZV6UOMZiYOyCScWkI0s_3Rsm2TOTVO41QWVNLVRH&client_secret=82E4588D74A16D38B399EC5A5FC98699F328BD7E1F0479EC27EC268E9DC38832\n&username=solbritt@projet12.com&password=",
+					"protocol": "https",
+					"host": [
+						"login",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "3MVG9t0sl2P.pByr0XWCdLg8NF11Ts6iq4xnASLBv3YxyZV6UOMZiYOyCScWkI0s_3Rsm2TOTVO41QWVNLVRH"
+						},
+						{
+							"key": "client_secret",
+							"value": "82E4588D74A16D38B399EC5A5FC98699F328BD7E1F0479EC27EC268E9DC38832\n"
+						},
+						{
+							"key": "username",
+							"value": "solbritt@projet12.com"
+						},
+						{
+							"key": "password",
+							"value": 
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RestAccountById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 00D7Q0000016EcT!AQ8AQCLrYRsJqDq7LGmn.EwEeRlhDlDVqMpnhjJsRSTIGQJ5DB91Ru2TnwUWrrQn5lE47Udl.x3KE2VRHFtm19hlhC9X3LOl",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/data/v52.0/sobjects/Account/0017Q000004PNFuQAO",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Account",
+						"0017Q000004PNFuQAO"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RestAccountById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  00D7Q0000016EcT!AQ8AQMMDHYuCz_uqLKS3Nt1zqJe36DJS4Lb_oIrZ4AhQB88.G96vVbCOiRKoJmg09tpRFh2nW4QgBfufR3k1mC9exlwegY1U\n",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://projet12com-dev-ed.my.salesforce.com/services/data/v52.0/sobjects/Account/0017Q000004PNFuQAO",
+							"protocol": "https",
+							"host": [
+								"projet12com-dev-ed",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"data",
+								"v52.0",
+								"sobjects",
+								"Account",
+								"0017Q000004PNFuQAO"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 21 Nov 2021 17:44:14 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Sforce-Limit-Info",
+							"value": "api-usage=1704/15000"
+						},
+						{
+							"key": "ETag",
+							"value": "\"G1Nv+Sb4ET8yi4FNWG9QT/ZcEmJXKJ6PxWEsxnJOmzw=--gzip\""
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Sat, 13 Nov 2021 16:04:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"attributes\": {\n        \"type\": \"Account\",\n        \"url\": \"/services/data/v52.0/sobjects/Account/0017Q000004PNFuQAO\"\n    },\n    \"Id\": \"0017Q000004PNFuQAO\",\n    \"IsDeleted\": false,\n    \"MasterRecordId\": null,\n    \"Name\": \"Burlington Textiles Corp of America\",\n    \"Type\": \"Customer - Direct\",\n    \"ParentId\": null,\n    \"BillingStreet\": \"525 S. Lexington Ave\",\n    \"BillingCity\": \"Burlington\",\n    \"BillingState\": \"NC\",\n    \"BillingPostalCode\": \"27215\",\n    \"BillingCountry\": \"USA\",\n    \"BillingLatitude\": null,\n    \"BillingLongitude\": null,\n    \"BillingGeocodeAccuracy\": null,\n    \"BillingAddress\": {\n        \"city\": \"Burlington\",\n        \"country\": \"USA\",\n        \"geocodeAccuracy\": null,\n        \"latitude\": null,\n        \"longitude\": null,\n        \"postalCode\": \"27215\",\n        \"state\": \"NC\",\n        \"street\": \"525 S. Lexington Ave\"\n    },\n    \"ShippingStreet\": null,\n    \"ShippingCity\": null,\n    \"ShippingState\": null,\n    \"ShippingPostalCode\": null,\n    \"ShippingCountry\": null,\n    \"ShippingLatitude\": null,\n    \"ShippingLongitude\": null,\n    \"ShippingGeocodeAccuracy\": null,\n    \"ShippingAddress\": null,\n    \"Phone\": \"(336) 222-7000\",\n    \"Fax\": \"(336) 222-8000\",\n    \"AccountNumber\": \"CD656092\",\n    \"Website\": \"www.burlington.com\",\n    \"PhotoUrl\": \"/services/images/photo/0017Q000004PNFuQAO\",\n    \"Sic\": \"546732\",\n    \"Industry\": \"Apparel\",\n    \"AnnualRevenue\": 350000000,\n    \"NumberOfEmployees\": 9000,\n    \"Ownership\": \"Public\",\n    \"TickerSymbol\": \"BTXT\",\n    \"Description\": null,\n    \"Rating\": \"Warm\",\n    \"Site\": null,\n    \"OwnerId\": \"0057Q000000itF4QAI\",\n    \"CreatedDate\": \"2021-11-13T16:04:50.000+0000\",\n    \"CreatedById\": \"0057Q000000itF4QAI\",\n    \"LastModifiedDate\": \"2021-11-13T16:04:50.000+0000\",\n    \"LastModifiedById\": \"0057Q000000itF4QAI\",\n    \"SystemModstamp\": \"2021-11-13T16:04:50.000+0000\",\n    \"LastActivityDate\": null,\n    \"LastViewedDate\": \"2021-11-14T18:00:52.000+0000\",\n    \"LastReferencedDate\": \"2021-11-14T18:00:52.000+0000\",\n    \"Jigsaw\": null,\n    \"JigsawCompanyId\": null,\n    \"CleanStatus\": \"Pending\",\n    \"AccountSource\": null,\n    \"DunsNumber\": null,\n    \"Tradestyle\": null,\n    \"NaicsCode\": null,\n    \"NaicsDesc\": null,\n    \"YearStarted\": null,\n    \"SicDesc\": null,\n    \"DandbCompanyId\": null,\n    \"OperatingHoursId\": null,\n    \"CustomerPriority__c\": null,\n    \"SLA__c\": \"Silver\",\n    \"Active__c\": null,\n    \"NumberofLocations__c\": 6,\n    \"UpsellOpportunity__c\": \"Maybe\",\n    \"SLASerialNumber__c\": \"5367\",\n    \"SLAExpirationDate__c\": \"2021-12-08\"\n}"
+				}
+			]
+		},
+		{
+			"name": "PUTAccountByName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Name\": \"MyCreatedAccount\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/AccountManager/v1/0017Q0000030kE8QAI",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"AccountManager",
+						"v1",
+						"0017Q0000030kE8QAI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTCreateNewContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Kate\",\r\n    \"LastName\": \"Winslet\",\r\n    \"Email\": \"katewinslet@gmail.com\",\r\n    \"Phone\": \"0102030405\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/*",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						"*"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POSTCreateNewContact",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"Kate\",\r\n    \"LastName\": \"Winslet\",\r\n    \"Email\": \"katewinslet@gmail.com\",\r\n    \"Phone\": \"0102030405\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/*",
+							"protocol": "https",
+							"host": [
+								"projet12com-dev-ed",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"ContactManager",
+								"v1",
+								"*"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 11 Dec 2021 20:45:27 GMT"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "none"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,must-revalidate,max-age=0,no-store,private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "\"0037Q0000029jrUQAQ\""
+				}
+			]
+		},
+		{
+			"name": "PUTUpdateContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Kate\",\r\n    \"LastName\": \"Winslet\",\r\n    \"Email\": \"katewinslet@gmail.com\",\r\n    \"Phone\": \"0102030405\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/0037Q0000029jrUQAQ",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						"0037Q0000029jrUQAQ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTNewContract",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"PostmanContract\",\r\n    \"Status\": \"Draft\",\r\n    \"AccountId\": \"0017Q0000030kE8QAI\",\r\n    \"StartDate\": \"2022-01-01\",\r\n    \"ContractTerm\": \"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContractManager/v1/*",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContractManager",
+						"v1",
+						"*"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCHUpdateContractStatus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"PostmanContract\",\r\n    \"Status\": \"Activated\",\r\n    \"AccountId\": \"0017Q0000030kE8QAI\",\r\n    \"StartDate\": \"2022-01-01\",\r\n    \"ContractTerm\": \"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContractManager/v1/8007Q000000Xs7bQAC",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContractManager",
+						"v1",
+						"8007Q000000Xs7bQAC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETEDeactivatedContact",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FirstName\": \"Joe\",\r\n    \"LastName\": \"Tester\",\r\n    \"Phone\": \"+330123456789\",\r\n    \"Email\": \"testy@gmail.com\",\r\n    \"Deactivated__c\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/apexrest/ContactManager/v1/0037Q0000028oEXQAY",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContactManager",
+						"v1",
+						"0037Q0000028oEXQAY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CreateNewAccount",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "00D7Q0000016EcT!AQ8AQL6duPear11bTbxI0LLnftM7zdVtH1.ZnnzjoNw6vh7xlMfqJgZ4Bha_Vkt88ChDivANE56JQIInji1pVx8FFvToBoeG",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Account> \r\n    <Name>AnotherCreatedAccount</Name>\r\n    <Phone>0102030405</Phone>\r\n</Account>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet12com-dev-ed.my.salesforce.com/services/data/v52.0/sobjects/Account",
+					"protocol": "https",
+					"host": [
+						"projet12com-dev-ed",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"data",
+						"v52.0",
+						"sobjects",
+						"Account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
